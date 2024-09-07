@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+hr{
+    background-color: #2e2e2e;
+    height: 10px;
+    outline: none;
+    border: none;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: #44d62c;
+    --accent-color: #555555;
+    --fade-color: #888888;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1140px;
+    margin-inline: auto;
+}
+
+/* navbar */
+
+
+.nav{
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.nav-bar{
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: space-between;
+    padding-inline: 30px;
+}
+.nav-content{
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.nav-content ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+}
+.nav-content ul li{
+    /* text-transform: uppercase; */
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+.nav-content ul li a{
+    
+    color: var(--fade-color);
+    transition: 0.3s ease-in-out;
+}
+.nav-content ul li a:hover{
+    color: var(--primary-color);
+}
+.logo-img img{
+    width: 36px;
+    height: 36px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* .nav-bar a{
+    width: 50px;
+    height: 50px;
+} */
+#icon{
+   margin-right: 55px;
+}
+#s{
+    color: var(--fade-color);
+    transition: 0.3s ease-in-out;
+}
+#c{
+    color: var(--fade-color);
+    transition: 0.3s ease-in-out;
+}
+#s:hover{
+    color: var(--primary-color);
+}
+#c:hover{
+    color: var(--primary-color);
+}
+
+/* Header content */
+
+.header{
+    background-color: var(--accent-color);
+    margin-top: 66.5px;
+    /* width: 44px; */
+}
+.content-head{
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    align-items: center;
+    color: var(--primary-color);
+}
+.content-head a{
+    color: var(--primary-color);
+}
+.content-head a:hover{
+    text-decoration: underline;
+}
+
+/* cobra pro */
+
+.cobra-pro{
+    background: url(cobra-pro-homepage-desktop.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+.cobra-content{
+    margin-top: 55px;
+    color: var(--primary-color);
+    text-align: center;
+}
+.cobra-content h1{
+    letter-spacing: 0.5px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    word-spacing: 0.5px;
+}
+.cobra-content h2{
+    letter-spacing: 0.5px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* position: relative;
+    bottom: 10px; */
+    word-spacing: 0.5px;
+}
+.gap{
+    /* position: relative;
+    bottom: 10px; */
+
+}
+#G, #R, #N, #B, #A, #Z, #O, #B, #C, #D, #E, #F, #I, #J, #K, #L, #M, #N{
+    color: var(--secondary-color);
+}
+
+.gap a{
+    color: var(--primary-color);
+    font-size: 1.313rem;
+    padding-inline: 17px;
+}
+
+/* New razer blade */
+.new-razer{
+    background: url(razer-blade-14-2023-homepage-desktop.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* razer moray */
+.razer-moray{
+    height: 700px;
+    background: url(moray-homepage-desktop1x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* grid-section */
+.grid-section{
+    display: grid;
+    grid-template-columns: 727.5px 727.5px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #2e2e2e;
+    grid-auto-rows: 570px;
+    
+}
+.img-1{
+    background: url(razer-cobra-b-950x580-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content-1{
+    text-align: center;
+    margin-top: 55px;
+    color: var(--primary-color);
+}
+.content-1 h1{
+    letter-spacing: 0.5px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    word-spacing: 0.5px;
+}
+.content-1 h3{
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    bottom: 10px;
+    word-spacing: 0.5px;
+}
+.gap-two{
+    position: relative;
+    bottom: 5px;
+}
+.gap-two a{
+    color: var(--primary-color);
+    font-size: 1.063rem;
+    padding-inline: 17px;
+}
+
+/* img2 */
+
+.img-2{
+    background: url(deathstalkerprotkl-950x580-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Close{
+    position: relative;
+    bottom: 25px;
+}
+.cont h3{
+    position: relative;
+    bottom: 30px;
+}
+.gap-three{
+    position: relative;
+    bottom: 25px;
+}
+/* img3 */
+.img-3{
+    background: url(mercury-blade16-blade18-b-950x580-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hry h3{
+    margin-top: 8px;
+}
+
+/* img-4 */
+.img-4{
+    background: url(enkipro-lamborghini-b-950x580-desktop.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+/* .Tag{
+    background-color: orange;
+    width: 20px;
+    height: 30px;
+
+} */
+
+.tag{
+    position: relative;
+    left: 43%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2910a;
+    width: 100px;
+    /* height: 40px; */
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+   
+}
+.tag a{
+
+    color: black;
+    font-size: 0.9rem;
+}
+#tag-sta{
+    font-size: 0.8rem;
+    position: relative;
+    right: 5px;
+}
+#tag-close{
+    font-weight: 600;
+    position: relative;
+    bottom: 5px;
+}
+/* img-5 */
+.img-5{
+    background: url(razer-edge-b-950x580-desktop.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+/* image-6 */
+.img-6{
+    background: url(razerstore-rewards-blackwidow-v4-pro-b-950x580-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* footer content */
+.container-foot{
+    /* border: 1px solid red; */
+    margin-top: 25px;
+    max-width: 1150px;
+    margin-inline: auto;
+    color: #999999;
+    display: flex;
+    column-gap: 80px;
+    height: 290px;
+    
+}
+
+.container-foot ul li{
+    font-size: 0.80rem;
+    text-align: start;
+    padding-bottom: 12px;
+}
+.container-foot ul li a img{
+    width: 28px;
+    height: 28px;
+}
+.container-foot ul::first-line{
+    color: var(--primary-color) !important;
+}
+.icons-for-promotion-1{
+    position: relative;
+    bottom: 11px;
+}
+.icons-for-promotion-2{
+    position: relative;
+    bottom: 23px;
+}
+.icons-for-promotion-3{
+    position: relative;
+    bottom: 35px;
+}
+.icons-for-promotion-4{
+    position: relative;
+    bottom: 47px;
+}
+.icons-for-promotion-5{
+    position: relative;
+    bottom: 58px;
+}
+.icons-for-promotion-6{
+    position: relative;
+    bottom: 70px;
+}
+.icons-class li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container-foot h5{
+    color: var(--secondary-color);
+    margin-left: 100px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.container-last-foot{
+    max-width: 1150px;
+    margin-inline: auto;
+    margin-top: 16px;
+}
+
+.last-footer hr{
+    height: 1px;
+    
+}
+.last-content-foot{
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last-foot{
+    /* padding-inline: 12px; */
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.last-foot ul li{
+    position: relative;
+    right: 13px;
+    display: inline-block;
+    text-align: center;
+    line-height: 10px;
+    font-size: 0.80rem;
+    padding-inline: 15px;
+    border-left: 1px solid #999999;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 895px; */
+}
+#Nope{
+    border-left: none !important;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.last-h5{
+    display: flex;
+    align-items: center;
+
+}
+.last-h5 p{
+    color: var(--primary-color);
+    font-size: 0.80rem;
+    font-weight: 600;
+    padding-inline: 5px;
+    border-right: 2px solid var(--primary-color);
+    line-height: 10px;
+
+}
+#noop{
+    border-right: none !important;
+    color: #999999 !important;
+    
+
+}
+.gap a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.gap-two a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.uni-anker li:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+#Nope:hover{
+    color: #999999;
+}
